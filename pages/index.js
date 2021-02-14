@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
+import CardPost from '../components/cardPost'
 
 export default function Home() {
   return (
-    <div className="bg-indigo-300 min-h-screen">
+    <div className="bg-dark-gray min-h-screen">
       <Head>
         <title>Dashboard</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -12,7 +13,9 @@ export default function Home() {
       </Head>
 
       <Layout >
-       This is dashboard content
+        <div className="mt-5">
+        <CardPost />
+        </div>
       </Layout>
 
     </div>

@@ -1,12 +1,13 @@
+import { useRouter } from 'next/router'
 import Footer from '../components/footer'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 
-export default function Layout({children}) {
+export default function Layout({children, ...props}) {
   return (
     <div className="flex"> 
         <Sidebar />
-        <div className="flex flex-col flex-auto">
+        <div className="content flex flex-col flex-auto">
             <Header />
             <main >
                 {children}
